@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Changer</title>
+    <link rel="stylesheet" type="text/css" href="backColor.css">
+</head>
+<body>
+    <div class="colors">
+        <span class="active" style="--clr:#1dd1a1;" onclick="changColor('#1dd1a1')"></span>
+        <span style="--clr:#ff6b6b;" onclick="changColor('#ff6b6b')"></span>
+        <span style="--clr:#ff9f43;" onclick="changColor('#ff9f43')"></span>
+        <span style="--clr:#2e86e0;" onclick="changColor('#2e86e0')"></span>
+        <span style="--clr:#f368e0;" onclick="changColor('#f368e0')"></span>
+    </div>
+    <script>
+        function changColor(color){
+            document.body.style.background = color;
+            document.querySelectorAll('span').forEach(function(item){
+                item.classList.remove('active');
+            })
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

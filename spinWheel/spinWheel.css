@@ -11,8 +11,8 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-  background-color: #141E30;
-  background: linear-gradient(to right, #24243e, #141E30, #0f0c29);}
+    background: #333;
+}
 .container
 {
     position: relative;
